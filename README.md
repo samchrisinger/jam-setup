@@ -29,8 +29,8 @@ The exports of this module will be module be used to determine which collections
 ```
 module.exports = [{
     id: 'experiments',
-    // optional: state: 'mongo',
     attrs: {
+         // optional: state: 'mongo',
          // optional: schema: {},
          permissions: {
               '*': READ
@@ -55,5 +55,5 @@ Open a node.js shell (`node`) run:
 undefined
 > var client = new Client(<your_environment>);
 undefined
-> client.bootstrap(<your_namespace>)
+> client.bootstrap(<your_namespace>, 'user-osf-<your-osf-guid>')
 ```

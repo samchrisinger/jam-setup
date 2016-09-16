@@ -22,8 +22,8 @@ module.exports = [{
     }
 }, {
     id: 'thumbnails',
-    state: 'mongo',
     attrs: {
+        state: 'mongo',
         permissions: {
             '*': READ
         }
